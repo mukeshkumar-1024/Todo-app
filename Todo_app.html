@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+
+    <style>
+
+        /* Google Font Feel */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            background: linear-gradient(135deg,#667eea,#764ba2);
+        }
+
+        /* App Container Feel */
+        h2{
+            color:#fff;
+            margin-bottom:20px;
+            letter-spacing:1px;
+        }
+
+        /* Input */
+        input{
+            width:260px;
+            padding:12px 15px;
+            border:none;
+            outline:none;
+            border-radius:8px;
+            font-size:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom:12px;
+        }
+
+        /* Add Button */
+        #btn1{
+            padding:12px 20px;
+            border:none;
+            border-radius:8px;
+            background:#ff7eb3;
+            color:white;
+            font-size:15px;
+            cursor:pointer;
+            transition:0.3s;
+            margin-bottom:20px;
+        }
+
+        #btn1:hover{
+            transform:scale(1.05);
+            background:#ff4f95;
+        }
+
+        /* List */
+        ul{
+            list-style:none;
+            width:320px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Task Item */
+        li{
+            background:rgba(255,255,255,0.15);
+            color:#fff;
+            padding:12px 15px;
+            margin-bottom:12px;
+            border-radius:10px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        li:hover{
+            transform:translateX(5px);
+            background:rgba(255,255,255,0.25);
+        }
+
+        /* Delete Button */
+        .delete{
+            border:none;
+            padding:7px 12px;
+            border-radius:6px;
+            background:#ff5252;
+            color:white;
+            cursor:pointer;
+            font-size:13px;
+            transition:0.3s;
+        }
+
+        .delete:hover{
+            background:#ff0000;
+            transform:scale(1.1);
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <h2>Todo App</h2>
+
+    <input type="text" placeholder="Enter Your Task">
+    
+    <button id="btn1">Add Task</button>
+    <!-- <button id="btn2">Delete Task</button> -->
+
+    <ul>
+        <li>Eat<button class="delete">delete</button></li>
+        <li>Sleep<button class="delete">delete</button></li>
+    </ul>
+
+    <script src="Todo_app.js"></script>
+
+</body>
+</html>
